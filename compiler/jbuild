@@ -1,11 +1,10 @@
 (executables
- ((names (jsoo_compile))
+ ((names (jsoo_compile minify))
   (ocamlc_flags (-I +compiler-libs))
   (ocamlopt_flags (-I +compiler-libs))
-  (libraries (cmdliner base64 js_of_ocaml_compiler))
+  (libraries (cmdliner base64 js_of_ocaml_compiler js_of_ocaml_compiler_findlib_support))
   (extra_disabled_warnings (7 9 37 38))
   (preprocess ((no_preprocessing All)))
-  (modules (:standard \ control jsoo_findlib_support jsoo_findlib_support_internal minify minifyArg util.cppo))
   ))
 
 (rule

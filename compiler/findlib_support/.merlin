@@ -1,9 +1,7 @@
 STDLIB /home/hheuzard/.opam/4.03.0/lib/ocaml
 FLG -w @a-4-29-40-41-42-44-45-48-52-56-58-59-7-9-37-38 -strict-sequence -short-paths
 FLG -attributes-allowed
-S ./lib
-CMT ./lib
-CMI ../.liblinks/js_of_ocaml_compiler
-S ./findlib_support
-CMT ./findlib_support
-CMI ../.liblinks/js_of_ocaml_compiler_findlib_support
+FLG -open Js_of_ocaml_compiler_findlib_support
+S ../lib
+CMT ../lib
+CMI ../../.liblinks/js_of_ocaml_compiler

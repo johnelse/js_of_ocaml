@@ -5,7 +5,7 @@
   (libraries (cmdliner base64))
   (extra_disabled_warnings (7 9 37 38))
   (preprocess ((no_preprocessing All)))
-  (modules (:standard \ control jsoo_findlib_support jsoo_findlib_support_internal minify minifyArg util.cppo))
+  (modules (:standard \ control util.cppo))
   ))
 
 (ocamllex (js_lexer annot_lexer))
