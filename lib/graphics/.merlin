@@ -4,7 +4,7 @@ FLG -attributes-allowed
 EXT here
 EXT ounit
 EXT custom_printf
-FLG -open Js_of_ocaml_tyxml
+FLG -open Js_of_ocaml_graphics
 S ..
 CMT ..
 CMI ../../.liblinks/js_of_ocaml

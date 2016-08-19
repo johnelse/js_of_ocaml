@@ -1,7 +1,7 @@
 STDLIB /home/hheuzard/.opam/4.03.0/lib/ocaml
-FLG -w @a-4-29-40-41-42-44-45-48-52-56-58-59-9 -strict-sequence -short-paths
+FLG -w @a-4-29-40-41-42-44-45-48-52-56-58-59 -strict-sequence -short-paths
 FLG -attributes-allowed
 EXT here
 EXT ounit
 EXT custom_printf
-FLG -open Js_of_ocaml
+FLG -open Js_of_ocaml_deriving

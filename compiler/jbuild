@@ -1,0 +1,18 @@
+(executables
+ ((names (jsoo_compile))
+  (ocamlc_flags (-I +compiler-libs))
+  (ocamlopt_flags (-I +compiler-libs))
+  (libraries (cmdliner base64 js_of_ocaml_compiler))
+  (extra_disabled_warnings (7 9 37 38))
+  (preprocess ((no_preprocessing All)))
+  (modules (:standard \ control jsoo_findlib_support jsoo_findlib_support_internal minify minifyArg util.cppo))
+  ))
+
+(rule
+ ((targets (js_of_ocaml))
+  (deps (jsoo_compile.exe))
+  (action "cp --remove-destination jsoo_compile.exe js_of_ocaml")))
+
+(alias
+  ((name DEFAULT)
+   (deps (js_of_ocaml))))
