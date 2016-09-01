@@ -1,4 +1,4 @@
-STDLIB /home/hheuzard/.opam/4.03.0/lib/ocaml
+STDLIB /home/hheuzard/l/tmp/opam.4.03bis/opam-root/4.03.0/lib/ocaml
 FLG -w @a-4-29-40-41-42-44-45-48-52-56-58-59 -strict-sequence -short-paths
 FLG -attributes-allowed
 S ../ppx

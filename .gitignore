@@ -12,7 +12,8 @@
 *.cmxa
 *.cmxs
 *.cmjs
-
+*.merlin
+artefacts.sexp
 # backup files
 *~
 *#

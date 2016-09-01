@@ -15,3 +15,5 @@
 (alias
   ((name DEFAULT)
    (deps (js_of_ocaml))))
+
+(provides js_of_ocaml)
